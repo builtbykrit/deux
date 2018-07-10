@@ -39,6 +39,8 @@ class MultiFactorAuthSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = mfa_settings.MFA_MODEL
+        fields = ('enabled', 'challenge_type', 'phone_number')
+
 
 
 class _BaseChallengeRequestSerializer(MultiFactorAuthSerializer):
