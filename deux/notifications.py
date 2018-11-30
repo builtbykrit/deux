@@ -1,7 +1,6 @@
 from __future__ import absolute_import, unicode_literals
 
 try:
-    from twilio.rest.exceptions import TwilioRestException
     from twilio.rest import Client as TwilioRestClient
 except ImportError:
     from twilio.rest import TwilioRestClient
